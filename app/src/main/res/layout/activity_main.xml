@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgfood"
+    tools:context="androidfood.triwi.id.androidfood.MainActivity">
+
+    <View
+        android:id="@+id/opacityFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorHitamT"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.7">
+    </View>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="200dp"
+                android:layout_height="160dp"
+                android:gravity="center"
+                android:src="@drawable/logofood"
+                />
+            <TextView
+                android:id="@+id/txtJudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Pesan Kue Spesial Anda ! "
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/TextSlogan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="31dp"
+                android:orientation="vertical">
+
+                <info.hoang8f.widget.FButton
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:background="@color/colorbtnRegister"
+                    android:id="@+id/btnLogin"
+                    android:layout_width="140dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Login"
+                    android:textColor="@color/colorbtnRegister"
+                    android:textSize="14dp"
+                    />
+
+                <info.hoang8f.widget.FButton
+                    android:layout_gravity="center"
+                    android:id="@+id/btnRegister"
+                    android:backgroundTint="@color/colorbtnRegister"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_width="140dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Register"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp"/>
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btnHitung"
+                    android:layout_width="140dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:backgroundTint="@color/colorbtnRegister"
+                    android:text="lol"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14dp" />
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btnCoba"
+                    android:onClick="Coba"
+                    android:layout_width="140dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:backgroundTint="@color/colorbtnRegister"
+                    android:text="lalalal"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="roti"
+                    android:id="@+id/textMessage"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextSlogan"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Pesan kue lebih mudah dan spesial, untuk acara dan ulang tahun. "
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="13sp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:alpha="0.7"/>
+
+    </RelativeLayout>
+

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "11238445529",
+    "project_id": "firebase-android-food"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11238445529:android:a76cc6a6ebc71e97",
+        "android_client_info": {
+          "package_name": "androidfood.triwi.id.androidfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11238445529-4744kmsih9lot495anmu095lh2mukmgg.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "11238445529-on7j3ajoobafgmfik9fmabs77afug399.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "namikaze.a",
+            "certificate_hash": "834bfafe209bce0c86bc35b1d69867307ecb500f"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC0sXi3kD1mUP-RdGy4Nuz9Ehq3TJdsEM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

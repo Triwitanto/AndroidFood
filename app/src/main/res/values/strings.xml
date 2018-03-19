@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BarVolume</string>
+    <string name="lebar">Lebar</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="hitung">Hitung</string>
+    <string name="hasil">Hasil</string>
+    <string name="panjang">panjang</string>
+    <string name="pesan">Belajar dan berdoa adalah kunci sukses</string>
+    <string-array name="nama_kue">
+        <item>kue1</item>
+        <item>kue2</item>
+        <item>kue3</item>
+        <item>kue4</item>
+        <item>kue5</item>
+        <item>kue6</item>
+        <item>kue7</item>
+    </string-array>
+    <string-array name="jenis_kue">
+        <item>ulang tahun</item>
+        <item>ulang tahun</item>
+        <item>acara keluarga</item>
+        <item>acara keluarga</item>
+        <item>acara keluarga</item>
+        <item>acara keluarga</item>
+        <item>acara keluarga</item>
+    </string-array>
+</resources>
