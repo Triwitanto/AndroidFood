@@ -1,8 +1,7 @@
 package androidfood.triwi.id.androidfood;
 
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -10,22 +9,20 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class HitungActivity extends AppCompatActivity implements View.OnClickListener {
-
-        private EditText edtWidth, edtHeight, edtLength;
-        private Button btnCalculator;
-        private TextView tvResult;
+    private EditText edtWidth, edtHeight, edtLength;
+    private TextView tvResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hitung);
-        edtWidth = (EditText)findViewById(R.id.edt_width);
-        edtHeight = (EditText) findViewById(R.id.edt_height);
-        edtLength = (EditText)findViewById(R.id.edt_length);
-        btnCalculator =(Button) findViewById(R.id.btn_calculate);
-        tvResult =(TextView) findViewById(R.id.tv_result);
-        btnCalculator.setOnClickListener(this);
+        edtWidth = findViewById(R.id.edt_width);
+        edtHeight = findViewById(R.id.edt_height);
+        edtLength = findViewById(R.id.edt_length);
+        Button btnCalculator = findViewById(R.id.btn_calculate);
+        tvResult = findViewById(R.id.tv_result);
 
+        btnCalculator.setOnClickListener(this);
     }
 
     @Override

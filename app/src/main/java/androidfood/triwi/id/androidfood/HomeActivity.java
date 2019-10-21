@@ -24,26 +24,24 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        recyclerView =(RecyclerView)findViewById(R.id.recyclearView);
+        recyclerView = findViewById(R.id.recyclearView);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
 
-        String[] Nama, Jenis;
-        Nama = getResources().getStringArray(R.array.nama_kue);
-        Jenis = getResources().getStringArray(R.array.jenis_kue);
+        String[] nama, jenis;
+        nama = getResources().getStringArray(R.array.namaKue);
+        jenis = getResources().getStringArray(R.array.jenisKue);
         int i = 0;
-        for (String NAMA : Nama)
-        {
-            Contact contact = new Contact(img_id[i],NAMA,Jenis[i]);
+        for (String NAMA : nama) {
+            Contact contact = new Contact(img_id[i],NAMA,jenis[i]);
             Contacts.add(contact);
             i++;
         }
         adapter = new ContactAdapter(Contacts, HomeActivity.this);
         recyclerView.setAdapter(adapter);
-
     }
 
     @Override

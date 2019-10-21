@@ -6,7 +6,7 @@
     <string name="hasil">Hasil</string>
     <string name="panjang">panjang</string>
     <string name="pesan">Belajar dan berdoa adalah kunci sukses</string>
-    <string-array name="nama_kue">
+    <string-array name="namaKue">
         <item>kue1</item>
         <item>kue2</item>
         <item>kue3</item>
@@ -15,7 +15,7 @@
         <item>kue6</item>
         <item>kue7</item>
     </string-array>
-    <string-array name="jenis_kue">
+    <string-array name="jenisKue">
         <item>ulang tahun</item>
         <item>ulang tahun</item>
         <item>acara keluarga</item>
