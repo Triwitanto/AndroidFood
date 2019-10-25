@@ -16,55 +16,45 @@ import java.util.ArrayList;
  */
 
 public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactViewHolder> {
-    ArrayList<Contact> adapter_list = new ArrayList<>();
-    HomeActivity homeActivity;
-    Context ctx;
+    private ArrayList<Contact> adapterList;
+    private HomeActivity homeActivity;
 
-
-    public  ContactAdapter(ArrayList<Contact>adapter_list,Context ctx)
-    {
-        this.adapter_list = adapter_list;
-        this.ctx = ctx;
+    ContactAdapter(ArrayList<Contact> adapterList, Context ctx) {
+        this.adapterList = adapterList;
         homeActivity =(HomeActivity) ctx;
-
     }
 
     @Override
     public ContactViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_layout,parent,false);
-        ContactViewHolder contactViewHolder = new ContactViewHolder(view, homeActivity);
 
-
-        return contactViewHolder;
+        return new ContactViewHolder(view, homeActivity);
     }
 
     @Override
     public void onBindViewHolder(ContactViewHolder holder, int position) {
-
-       holder.img.setImageResource(adapter_list.get(position).getImg_id());
-       holder.Nama.setText(adapter_list.get(position).getNama_kue());
-       holder.Jenis.setText(adapter_list.get(position).getJenis_kue());
-
+       holder.img.setImageResource(adapterList.get(position).getImgId());
+       holder.nama.setText(adapterList.get(position).getNamaKue());
+       holder.jenis.setText(adapterList.get(position).getJenisKue());
     }
 
     @Override
     public int getItemCount() {
-        return adapter_list.size();
+        return adapterList.size();
     }
 
-    public static class  ContactViewHolder extends RecyclerView.ViewHolder {
-
+    static class  ContactViewHolder extends RecyclerView.ViewHolder {
         ImageView img;
-        TextView Nama,Jenis;
+        TextView nama, jenis;
         CheckBox checkBox;
         HomeActivity homeActivity;
 
-        public ContactViewHolder(View itemView, HomeActivity homeActivity) {
+        ContactViewHolder(View itemView, HomeActivity homeActivity) {
             super(itemView);
-            img = (ImageView) itemView.findViewById(R.id.imgId);
-            Nama = (TextView) itemView.findViewById(R.id.namaKue);
-            Jenis = (TextView)itemView.findViewById(R.id.jenisKue);
-            checkBox = (CheckBox) itemView.findViewById(R.id.checkbox);
+            img = itemView.findViewById(R.id.imgId);
+            nama = itemView.findViewById(R.id.namaKue);
+            jenis = itemView.findViewById(R.id.jenisKue);
+            checkBox = itemView.findViewById(R.id.checkbox);
             this.homeActivity = homeActivity;
         }
     }

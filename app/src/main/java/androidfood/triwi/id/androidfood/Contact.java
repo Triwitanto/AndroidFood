@@ -4,39 +4,37 @@ package androidfood.triwi.id.androidfood;
  * Created by TRW on 3/10/2018.
  */
 
-public class Contact {
+class Contact {
 
-    int img_id;
-    String nama_kue, jenis_kue;
+    private int imgId;
+    private String namaKue, jenisKue;
 
-    public Contact(int img_id, String nama_kue, String jenis_kue){
-
-        this.setImg_id(img_id);
-        this.setNama_kue(nama_kue);
-        this.setJenis_kue(jenis_kue);
-
+    Contact(int imgId, String namaKue, String jenisKue){
+        this.setImgId(imgId);
+        this.setNamaKue(namaKue);
+        this.setJenisKue(jenisKue);
     }
-    public int getImg_id() {
-        return img_id;
+    int getImgId() {
+        return imgId;
     }
 
-    public void setImg_id(int img_id) {
-        this.img_id = img_id;
+    private void setImgId(int imgId) {
+        this.imgId = imgId;
     }
 
-    public String getNama_kue() {
-        return nama_kue;
+    String getNamaKue() {
+        return namaKue;
     }
 
-    public void setNama_kue(String nama_kue) {
-        this.nama_kue = nama_kue;
+    private void setNamaKue(String namaKue) {
+        this.namaKue = namaKue;
     }
 
-    public String getJenis_kue() {
-        return jenis_kue;
+    String getJenisKue() {
+        return jenisKue;
     }
 
-    public void setJenis_kue(String jenis_kue) {
-        this.jenis_kue = jenis_kue;
+    private void setJenisKue(String jenisKue) {
+        this.jenisKue = jenisKue;
     }
 }
